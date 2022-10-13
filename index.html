@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <!-- Bootstrap CSS -->
+    <!-- https://cdnjs.com/libraries/twitter-bootstrap/5.0.0-beta1 -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/css/bootstrap.min.css" />
+
+    <!-- Icons: https://getbootstrap.com/docs/5.0/extend/icons/ -->
+    <!-- https://cdnjs.com/libraries/font-awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
+
+    <title>Hunter project</title>
+    <!-- css link -->
+    <link rel="stylesheet" href="style.css">
+    <!-- responsive css -->
+    <link rel="stylesheet" href="responsive css/responsive.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="search-filed">
+            <input type="search" placeholder="Enter Your Phone Name" name="" id="input-text">
+            <button class="btns" onclick="clicktoSearch()">Search</button>
+
+        </div>
+        <!-- Phone Container -->
+        <div id="all-phone">
+
+        </div>
+
+        <!-- show msg -->
+        <div class="show-msg" id="show-msg">
+            <h1>No Phone Found , Please Search For Another Phone</h1>
+        </div>
+        <!-- sppinner -->
+        <div class="contiane" id="spiner">
+            <div class="text-center">
+                <div class="spinner-border" role="status">
+                    <span class="visually-hidden">Loading...</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Modal -->
+        <div id="toggle">
+            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
+                aria-labelledby="staticBackdropLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="staticBackdropLabel"></h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body" id="toggle-body">
+
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-primary"><a
+                                    href="https://www.facebook.com/messages/t/100063829924455">Bye Now</a></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- moddle -->
+
+    </div>
+
+
+
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.0.0-beta1/js/bootstrap.bundle.min.js"></script>
+    <!-- main js link -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
